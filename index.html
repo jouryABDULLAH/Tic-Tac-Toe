@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
     
+    <div id="container">
+
+        <div id="gameContainer" style="display: none;">
+
+            <div id="message"></div>
+            <div id="board"></div>
+            <button id="restart" class="btn">Play again</button>   
+             
+        </div>
+       
+        
+        <form id="playForm">
+            <div>
+                <label for="p1">First Player (X):</label>
+                <input type="text" id="p1" value="First Player">
+            </div>
+           
+            <div>
+                <label for="p2">Second Player (O):</label>
+                <input type="text" id="p2" value="Second Player">
+            </div>
+            <div>
+                <button class="btn">Play</button>           
+            </div>
+        </form>
+
+    </div>
 
 
 
