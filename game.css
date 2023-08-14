@@ -1,0 +1,107 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+}
+
+
+.btn{
+    padding: 0.5rem;
+    background: none;
+    border: 2px rgb(204, 53, 78) solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: pink;
+}
+
+#restart{
+    display: none;
+}
+
+
+#container{
+    padding: 5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#message{
+    align-self: center;
+    background-color: rgb(202, 101, 101);
+    padding: 1rem;
+    color: white;
+}
+
+#board{
+    display: grid;
+    width: clamp(279px, 45%, 400px);
+    aspect-ratio: 1 / 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgba(255, 190, 190, 0.662);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.cell{
+    color: rgb(202, 101, 101);
+    border: 1px solid rgb(68, 4, 4);
+    background-color: white;
+    font-size: 4rem;
+    text-align: center;
+    cursor: pointer;
+    border: 2px white solid;
+}
+
+
+
+
+
+#playForm{
+    position: absolute;
+    color: rgb(202, 101, 101);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(255, 0, 0, 0.33);
+    width: 300px;
+}
+
+label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
